@@ -7,7 +7,7 @@ namespace Class_Practice_Too
     class Book
     {
         public string Title;
-        public string author;
-        public int pages;
+        public string Author;
+        public int Pages;
     }
 }
