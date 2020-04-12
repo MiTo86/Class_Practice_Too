@@ -10,6 +10,7 @@ namespace Class_Practice_Too
         public string Author;
         public int Pages;
         private string rating;
+        public static int bookCount = 0; //Added a static attribute thast counts the number of books created.
 
         //Adding a constructor - a special method that is put inside a class that is called whenever an object of the class is created.
         public Book(string aTitle, string aAuthor, int aPages, string aRating) // The constructor with parameters.
@@ -17,7 +18,8 @@ namespace Class_Practice_Too
             Title = aTitle;
             Author = aAuthor;
             Pages = aPages;
-            Rating = aRating; //added for getter and setter demo (called the setter
+            Rating = aRating; //added for getter and setter demo (called the setter)
+            bookCount++;
         }
 
         //Can also have a constructor without parameters

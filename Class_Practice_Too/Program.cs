@@ -18,17 +18,22 @@ namespace Class_Practice_Too
 
             //With a constructor
             Book book1 = new Book("Forward the Foundation", "Isaac Asimov", 434, "teen");
+            Console.WriteLine(Book.bookCount); //the static attribute counts the number of books created.
+
             Book book2 = new Book("The Last Emperox", "John Scalzi", 387, "what");
+            Console.WriteLine(Book.bookCount); //the static attribute counts the number of books created.
             Book book3 = new Book();
 
             book2.Title = "The Consuming Fire";
 
             Console.WriteLine(book1.Title);
             Console.WriteLine(book1.Author);
-
+            
             Console.WriteLine(book2.Title);
             Console.WriteLine(book2.Author);
+           
 
+            //Added the getter and setter for rating of the book
             //Checking if getter and setter work
             Console.WriteLine(book1.Rating);
             Console.WriteLine(book2.Rating);
@@ -37,7 +42,7 @@ namespace Class_Practice_Too
             Console.WriteLine(book1.HasRightPages());
             Console.WriteLine(book2.HasRightPages());
 
-            //Added the getter and setter for rating of the book
+            
 
             Console.ReadLine();
         }
