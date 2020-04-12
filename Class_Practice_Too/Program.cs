@@ -16,6 +16,8 @@ namespace Class_Practice_Too
             book2.Author = "John Scalzi";
             book2.Pages = 387;*/
 
+            usefulTools.Greetings("Mike"); //Added a static method
+
             //With a constructor
             Book book1 = new Book("Forward the Foundation", "Isaac Asimov", 434, "teen");
             Console.WriteLine(Book.bookCount); //the static attribute counts the number of books created.
