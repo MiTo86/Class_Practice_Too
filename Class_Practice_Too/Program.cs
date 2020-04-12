@@ -33,6 +33,7 @@ namespace Class_Practice_Too
             
             Console.WriteLine(book2.Title);
             Console.WriteLine(book2.Author);
+            book2.CoverArt();
            
 
             //Added the getter and setter for rating of the book
@@ -43,6 +44,10 @@ namespace Class_Practice_Too
             //Added an object method to determine if book is over 400 pages.
             Console.WriteLine(book1.HasRightPages());
             Console.WriteLine(book2.HasRightPages());
+
+            //Inheritance
+            CoverBook book4 = new CoverBook();
+            book4.CoverArt();
 
             
 

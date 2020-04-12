@@ -32,9 +32,9 @@ namespace Class_Practice_Too
         public string Rating
         {
             get { return rating; }
-            set 
-            { 
-            if (value =="children" || value == "teen" || value == "mature")
+            set
+            {
+                if (value == "children" || value == "teen" || value == "mature")
                 {
                     rating = value;
                 }
@@ -53,6 +53,11 @@ namespace Class_Practice_Too
                 return true;
             }
             return false;
+        }
+
+        public virtual void CoverArt()
+        {
+            Console.WriteLine("Has cover art.");
         }
     }
 }
