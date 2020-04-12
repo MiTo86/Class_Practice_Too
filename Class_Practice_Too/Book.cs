@@ -23,5 +23,15 @@ namespace Class_Practice_Too
         {
 
         }
+
+        //Adding an object method
+        public bool HasRightPages()
+        {
+            if (Pages >= 400)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

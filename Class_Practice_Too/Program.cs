@@ -29,6 +29,10 @@ namespace Class_Practice_Too
             Console.WriteLine(book2.Title);
             Console.WriteLine(book2.Author);
 
+            //Added an object method to determine if book is over 400 pages.
+            Console.WriteLine(book1.HasRightPages());
+            Console.WriteLine(book2.HasRightPages());
+
             Console.ReadLine();
         }
     }
